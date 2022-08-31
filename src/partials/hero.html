@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/sass/index.scss">
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+        <section class="hero">
+        <div class="hero__flex-container">
+        <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+        <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="hero__button">Order Now</button>
+        </div>
+        <div class="hero__container">
+        <ul class="hero__list">
+            <li class="hero__item">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/content/favorites/favoritse-desk/grenki.jpg 1x,
+                                    ./images/content/favorites/favoritse-desk/grenki2px.jpg 2x
+                                    "
+                                    >
+                    <source  media="(min-width: 768px)"
+                            srcset="./images/content/favorites/favoritse-tab/grenki-tablet.jpg 1x,
+                                    ./images/content/favorites/favoritse-tab/grenki-tablet2px.jpg 2x
+                                    "
+                                    >
+                                    <img class="hero__img" src="./images/content/favorites/favoritse-desk/grenki.jpg"alt="grenki"/>
+                </picture>
+            </li>
+            <!-- <li class="hero__item">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/content/favorites/favoritse-desk/grecheskiy-salat.jpg 1x,
+                                    ./images/content/favorites/favoritse-desk/grecheskiy-salat2px.jpg 2x
+                                    "
+                                    >
+                    <source media="(min-width: 768px)"
+                            srcset="./images/content/favorites/favoritse-tab/grecheskiy-salat-tablet.jpg 1x,
+                                    ./images/content/favorites/favoritse-tab/grecheskiy-salat-tablet2px.jpg 2x
+                                    "
+                                    >
+                                    <img src="./images/content/favorites/favoritse-desk/grecheskiy-salat.jpg"alt="grecheskiy-salat">
+                </picture>
+            </li>
+            <li class="hero__item">
+                <picture>
+                    <source  media="(min-width: 1200px)"
+                                    srcset="./images/content/favorites/favoritse-desk/yayko.jpg 1x,
+                                    ./images/content/favorites/favoritse-desk/yayko2px.jpg 2x
+                                    "
+                                    >
+                    <source  media="(min-width: 768px)"
+                                    srcset="./images/content/favorites/favoritse-tab/yayko-tablet.jpg 1x,
+                                    ./images/content/favorites/favoritse-tab/yayko-tablet2px.jpg 2x
+                                    "
+                                    >
+                                    <img src="./images/content/favorites/favoritse-desk/yayko.jpg"alt="grecheskiy-salat">
+                </picture>
+            </li> -->
+        </ul>
+        <button class="button-arrow-left">
+            <svg class="arrow" viewBox="0 0 48 40">
+                <use href="/src/images/icons/symbol-defs.svg#arrow-left"></use>
+            </svg>
+        </button>
+        <button class="button-arrow-right" >
+            <svg class="arrow" viewBox="0 0 48 40">
+                <use href="/src/images/icons/symbol-defs.svg#arrow-right"></use>
+            </svg>
+        </button>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

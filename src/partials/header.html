@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+    <div class="container  header__navigation">
+        
+            <a class="logo"><svg width="66px" height="52px">
+      <use href="/src/images/icons/symbol-defs.svg#icon-logo"></use>
+    </svg></a>
+    
+    
+    
+    <button  
+    type="button" 
+    class="menu__button" 
+    aria-expanded="false"
+    aria-controls="mobile__menu__container"
+    data-mob-open>
+       <svg  width="28" height="28" aria-label="перемикач мобільного меню">
+       <use class="icon__mobile__menu" href="/src/images/icons/symbol-defs.svg#icon-gg_menuburger"></use>
+       </svg>
+       </button>
+     
+       <div class=" mobile__menu__content">
+       <nav class="mobile__menu__container" id="mobile__menu__container" data-mob >
+         
+            <ul class="mobile__menu__navigation">
+               <button  
+         type="button" 
+         class="mobile__menu__close" 
+         aria-expanded="false"
+         aria-controls="mobile__menu__container"
+         data-mob-close>
+            <svg  width="10" height="10" aria-label="перемикач мобільного меню">
+            <use class="icon__mobile__close" href="/src/images/icons/symbol-defs.svg#icon-close"></use>
+             </svg>
+            </button>
+                <li class="mobile__menu__item"><a class="mobile__menu__link link" href="#">Home</a></li>
+                <li class="mobile__menu__item"><a class="mobile__menu__link link" href="#">About</a></li>
+                <li class="mobile__menu__item"><a class="mobile__menu__link link" href="#">Service</a></li>
+                <li class="mobile__menu__item"><a class="mobile__menu__link link"  href="#">Menu</a></li>
+                <li class="mobile__menu__item" ><a class="mobile__menu__link link" href="#">Contact</a></li>
+              </ul>
+           </nav>
+         </div>
+
+
+           <div class="desktop__navigation">
+            <nav>
+    <ul class="menu__navigation">
+        <li class="menu__item" ><a class="menu__link link" href="#">Home</a></li>
+        <li class="menu__item" ><a class="menu__link  link" href="#">About</a></li>
+        <li class="menu__item" ><a class="menu__link link" href="#">Service</a></li>
+        <li class="menu__item" ><a class="menu__link link" href="#">Menu</a></li>
+        <li class="menu__item" ><a class="menu__link link" href="#">Contact</a></li>
+</ul>
+</nav>
+           </div>
+
+<button class=" order__button">Order Now</button>
+  
+        </nav>
+</div>
+
+   </header>
+
+   <script src="/src/js/mobile-menu.js"></script>
+   
+</body>
+</html>

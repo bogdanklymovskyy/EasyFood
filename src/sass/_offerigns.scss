@@ -1,0 +1,208 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  
+}
+button{
+    padding: 0;
+    margin: 0;
+}
+.offerings{
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 150px;
+background-image: url(/src/images/content/favorites/favoritse-mob/backgraund-offerings-mobile.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding-bottom: 60px;
+padding-top: 60px;
+@media (min-width: 768px){
+/*    background-image: url(/src/images/content/favorites/favoritse-tab/); */
+}
+@media (min-width: 1280px){
+/*     background-image: url(/src/images/content/favorites/favoritse-desk/backgraund-offerings-desktop.jpg); */
+    flex-wrap: nowrap;
+ }
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        margin-top: 60px;
+        margin-bottom: 28px;
+        @media (min-width: 768px){
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 49px;
+            margin-right: 210px;
+        }
+        @media (min-width: 1280px){
+            line-height: 150%;
+            margin: 0;
+         }
+    }
+    &__paragraph{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 28px;
+        @media (min-width: 768px){
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            margin-right: 210px;
+        }
+        @media (min-width: 1280px){
+          margin: 0;
+        }
+    }
+    &__list{
+        display: block;
+        @media (min-width: 768px){
+          display: flex;
+        }
+        @media (min-width: 1280px){
+          margin-top: 40px;
+        }
+    }
+    &__item{
+        margin-bottom: 28px;
+        width: 252px;
+        @media (min-width: 768px){
+            margin-right: 116px;
+          }
+          @media (min-width: 1280px){
+          
+        }
+    }
+    &__button{
+        border: 2px solid #7EB101;
+        border-radius: 30px;
+        width: 106px;
+        height: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        margin-right: 24px;
+        cursor: pointer;
+        background-color: #fff;
+        &:hover{
+            border-color: #597D00;
+        }
+    }
+    &__icon{
+        width: 32px;
+        height: 32px;
+    }
+    &__link{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+    &__container{
+        margin: 0;
+        @media (min-width: 1280px){
+          width: 573px;
+          margin-left: 90px;
+        }
+    }
+}
+.under-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px; 
+    margin-bottom: 16px; 
+    @media (min-width: 768px){
+       
+    }
+    @media (min-width: 1280px){
+          
+    }
+}
+.under-paragraph{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    @media (min-width: 768px){
+       
+    }
+    @media (min-width: 1280px){
+          
+    }
+}
+.more{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__icon{
+        width: 14px;
+        height: 14px;
+    }   
+    @media (min-width: 1280px){
+          display: none;
+    }
+}
+.section-under-container{
+    display: flex;
+}
+.picture-tablet{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    @media (min-width: 1280px){
+        display: none;
+  }
+
+}
+.apple-list{
+    display: flex;
+}
+.apple-item{
+    margin-left: 30px;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.flex-apple{
+    
+}
