@@ -65,7 +65,6 @@ color: #2C2C2C;
 }
 
 .footer__form {
-    margin-left: 320px;
     @media (min-width: 768px) and (max-width: 1199px) {
         margin-left: 0px;
         margin-top: 40px;
@@ -134,8 +133,7 @@ height: 42px;
 .footer__part2-list {
     display: flex;
     flex-direction: row;
-    margin-right: 780px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         margin-right: 0px;
         margin-bottom: 40px;
     }

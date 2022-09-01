@@ -1,17 +1,90 @@
-    <main>
-      <section class="Offerings">
-        <h2>What’s Special About Our Offerings</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <ul>
-            <li>
-                <h3>Fasest Delivery</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-            </li>
-            <li>
-                <h3>Easy To Order</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-            </li>
-        </ul>
-        <button>Order Now</button>
-      </section>  
-    </main>
+<section class="offerings">
+  <div class="container">
+      <div class="flex-apple">
+          <div class="offerings__picture">
+              <ul class="apple-list">
+                  <li class="apple-item">       
+                       <picture>
+                      <source media="(min-width: 1280px)"
+                              srcset="./images/content/favorites/png/apple-offerings-desktop.png 1x,
+                                      ./images/content/favorites/png/apple-desktop2px.png 2x
+                                      "
+                                      >
+                      <source  media="(min-width: 768px)"
+                              srcset="./images/content/favorites/png/apple-offerings-tablet.png 1x,
+                                      ./images/content/favorites/png/apple-offerings-tablet2px.png 2x
+                                      "
+                                      >
+                      <source  media="(max-width: 468px)"
+                              srcset="./images/content/favorites/png/apple-offerings-mobile.png 1x,
+                                      ./images/content/favorites/png/apple-offerings-mobile2px.png 2x
+                                      "
+                                      >      
+                                      <img src="./images/content/favorites/png/apple-offerings-desktop.png"alt="apple"/>
+                  </picture>
+              </li>
+                  <div class="picture-tablet">
+                  <li class="apple-item  average">                
+                      <picture>
+                          <source  media="(min-width: 768px)"
+                                  srcset="./images/content/favorites/png/average-apple.png 1x,
+                                          ./images/content/favorites/png/average-apple2px.png 2x
+                                          "
+                                          >   
+                                          <img src="./images/content/favorites/png/average-apple.png"alt="apple"/>
+                      </picture>
+                  </li>
+                  <li class="apple-item  litle">                   
+                       <picture>
+                      <source  media="(min-width: 768px)"
+                              srcset="./images/content/favorites/png/litle-apple.png 1x,
+                                      ./images/content/favorites/png/litle-apple2px.png 2x
+                                      "
+                                      >   
+                                      <img src="./images/content/favorites/png/litle-apple.png"alt="apple"/>
+                  </picture>
+              </li>
+              </div>
+              </ul>
+          </div>
+          <div class="offerings__container">
+              <div>
+                  <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+                  <p class="offerings__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                  </div>
+                  <div>
+                      <ul class="offerings__list">
+                      <li class="offerings__item">
+                          <a class="offerings__link" href="#">
+                          <svg class="offerings__icon"  viewBox="0 0 32 32">
+                              <use href="./images/icons/symbol-defs.svg#raketa"></use>
+                          </svg>
+                          </a>
+                          <h3 class="under-title">Fasest Delivery</h3>
+                          <p class="under-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                      </li>
+                      <li class="offerings__item">
+                         <a class="offerings__link" href="#">
+                          <svg class="offerings__icon"  viewBox="0 0 32 32">
+                              <use href="./images/icons/symbol-defs.svg#touch"></use>
+                          </svg>
+                         </a>
+                          <h3 class="under-title">Easy To Order</h3>
+                          <p class="under-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                      </li>
+                  </ul>
+          <div class="section-under-container">
+          <button class="offerings__button">Order Now</button>
+          <a class="more" href="">Read More
+              <svg class="more__icon">
+                  <use href="./images/icons/symbol-defs.svg#read-more">
+                  </use>
+              </svg>
+          </a>
+          </div>
+      </div>
+  </div>
+      </div>
+      
+  </div>
+</section> 
