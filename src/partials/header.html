@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.min.css">
+    <link href="../index.js">
 </head>
 <body>
    <header class="header">
-    <div class="container  header__navigation">
+    <div class="container__header  header__navigation">
         
             <a class="logo"><svg width="66px" height="52px">
-      <use href="/src/images/icons/symbol-defs.svg#icon-logo"></use>
+      <use href="../images/icons/symbol-defs.svg#icon-logo"></use>
     </svg></a>
     
     
@@ -27,7 +29,7 @@
     aria-controls="mobile__menu__container"
     data-mob-open>
        <svg  width="28" height="28" aria-label="перемикач мобільного меню">
-       <use class="icon__mobile__menu" href="/src/images/icons/symbol-defs.svg#icon-gg_menuburger"></use>
+       <use class="icon__mobile__menu" href="../images/icons/symbol-defs.svg#icon-gg_menuburger"></use>
        </svg>
        </button>
      
@@ -42,7 +44,7 @@
          aria-controls="mobile__menu__container"
          data-mob-close>
             <svg  width="10" height="10" aria-label="перемикач мобільного меню">
-            <use class="icon__mobile__close" href="/src/images/icons/symbol-defs.svg#icon-close"></use>
+            <use class="icon__mobile__close" href="../images/icons/symbol-defs.svg#icon-close"></use>
              </svg>
             </button>
                 <li class="mobile__menu__item"><a class="mobile__menu__link link" href="#">Home</a></li>
@@ -67,14 +69,49 @@
 </nav>
            </div>
 
-<button class=" order__button">Order Now</button>
+<button data-modal-open class=" order__button" >Order Now</button>
   
         </nav>
 </div>
 
-   </header>
+</header>
 
-   <script src="/src/js/mobile-menu.js"></script>
-   
+
+   <div class="backdrop is-hidden " data-modal>
+      <div class="modal">
+          <p></p>
+      <button data-modal-close class="close__button" type="button">
+          <svg class="close-button-icon" width="11" height="11" >
+              <use href="../images/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+      </button>
+      <div class="modal__container">
+         <h3 class="modal__title">Order Form</h3>
+         <div class="modal__item">
+         <form class="modal__form">
+          <h4 class="modal__subtitle">Name</h4>
+          <label for="user-name"></label>
+          <input type="name" name="user-name" id="user-name" placeholder="Your name" required class="modal__input">
+        </div>
+        <div class="modal__item">
+          <form class="modal__form">
+            <h4 class="modal__subtitle">Phone number</h4>
+            <label for="user-tel"></label>
+            <input type="tel" name="user-tel" id="user-tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" required class="modal__input">
+          </div>
+          <div class="modal__item">
+            <form class="modal__form">
+              <h4 class="modal__subtitle">E-mail</h4>
+              <label for="user-email"></label>
+              <input type="email" name="user-email" id="user-email" placeholder="example@gmail.com" required class="modal__input">
+              <button class="modal__button" type="submit">Send</button>
+            </form>
+          </div>
+                 </div>
+      
+
+   <script src="./js/mobile-menu.js"></script>
+   <script src="./js/modal.js"></script>
+   <script src="./index.js"></script>
 </body>
 </html>
