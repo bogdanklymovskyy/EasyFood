@@ -380,26 +380,25 @@ background: #FFE550;
 
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 border-radius: 30px;
-@media(min-width:768px){
+// @media(min-width:768px){
   
-    transform: translate(20%);
+//     transform: translate(20%);
 }
 
 
 
-}
+
 
 .close__button{
-    left: 80%;
-    transform: translateY(30px);
+
+    transform: translateY(45px);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 32px;
     height: 32px;
-    left: 414px;
-    top: 12px;
+   left: 88%;
     border: none;
     border-radius: 50%;
     background: #FFFFFF;
@@ -410,10 +409,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     cursor: pointer;
     z-index: 6;
 
-    @media(min-width:768px){
   
-        margin-left: 90px;
-    }
 }
 
 
@@ -478,7 +474,10 @@ color: #2C2C2C;
   }
 
   .modal__button{
-    display: block;
+    display: flex;
+    justify-content: center;
+text-align: center;
+align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -491,7 +490,7 @@ color: #2C2C2C;
     border: 2px solid #7EB101;
     border-radius: 30px;
     margin-top: 32px;
-    margin-left: 160px;
+    margin-left: 150px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
